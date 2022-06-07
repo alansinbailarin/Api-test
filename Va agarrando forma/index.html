@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/723f3471d1.js" crossorigin="anonymous"></script>
+    <title>Practice 3</title>
+</head>
+<body>
+    <header class="header">
+        <a class="logo-a" href="index.html"><h1 class="logo">Vulbunú<span>News</span></h1><span></span></a>
+    </header>
+    <section class="navigation-bar">
+        <input type="search" class="search" name="isearch" id="isearch" placeholder="Search...">
+        <button id="btn-submit" class="btn-primary" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </section>
+    <div class="container">
+        <div class="card">
+            <div id="carta">
+                <h4>Word of the day: <span id="word"></span>.</h4><button id="open" class="open">What does it mean?</button>
+                
+            </div>
+        </div>
+            <div class="modal-container card" id="modal_container">
+                <div class="modal">
+                    <h1 id="word"></h1>
+                    <span id="mean">
+                        
+                    </span>
+                    <p id="date">
+
+                    </p>
+                    <button id="close" class="open">Close</button>
+                </div>
+            </div>
+    </div>
+    <h1 class="covidTitle">Covid cases</h1>
+    <div class="container">
+        <div class="card">
+            <h2 id="country"></h3>
+            <h3 class="totalCases">Total cases: <span id="totalCases"></span>.</h3>
+            <h3 class="activeClases">Active cases: <span id="activeCases"></span>.</h3>
+            <h3 class="newCases">New cases: <span id="newCases"></span>.</h3>
+            <h3 class="totalDeaths">Total deaths: <span id="totalDeaths"></span>.</h3>
+            <h3 class="newDeaths">New deaths (24 hours): <span id="newDeaths"></span>.</h3>
+            <h3 class="totalRecovered">Total recovered: <span id="totalRecovered"></span>.</h3>
+        </div>
+    </div>
+    <h1 class="covidTitle" id="title">Covid news</h1>
+    <div id="output" class="container">
+    </div>
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
